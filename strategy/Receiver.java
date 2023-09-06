@@ -22,7 +22,9 @@ public class Receiver extends Player {
         this.offenseBehavior = new ReceiverBehavior();
     }
 
-    // toString method to return the player's name
+/**
+ * toString method to return the player's name
+ */ 
     @Override
     public String toString() {
         return firstName + " " + lastName;
