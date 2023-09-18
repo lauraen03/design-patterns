@@ -4,7 +4,7 @@ package decorator;
 import java.util.ArrayList;
 
 /**
- * Concrete Decorator for changing the color of the vehicle.
+ *Decorator for changing the color of the vehicle.
  */
 public class Paint extends VehicleDecorator {
     private String colorCode;

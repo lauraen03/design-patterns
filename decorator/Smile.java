@@ -4,7 +4,7 @@ package decorator;
 import java.util.ArrayList;
 
 /**
- * Concrete Decorator for adding a Smile to a vehicle.
+ *Decorator for adding a Smile to a vehicle.
  */
 public class Smile extends VehicleDecorator {
     private ArrayList<String> smileLines;

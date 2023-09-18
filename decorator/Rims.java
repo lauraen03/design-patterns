@@ -3,7 +3,7 @@ package decorator;
 
 import java.util.ArrayList;
 /**
- * Concrete Decorator for adding Rims to a vehicle.
+ * Decorator for adding Rims to a vehicle.
  */
 public class Rims extends VehicleDecorator {
     private ArrayList<String> rimsLines;

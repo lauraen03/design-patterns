@@ -4,7 +4,7 @@ package decorator;
 import java.util.ArrayList;
 
 /**
- * Concrete Vehicle class representing a car.
+ *Vehicle class representing a car.
  */
 public class Car implements Vehicle {
     private ArrayList<String> lines;
