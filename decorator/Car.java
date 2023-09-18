@@ -30,4 +30,3 @@ public class Car implements Vehicle {
         return result.toString();
     }
 }
-
