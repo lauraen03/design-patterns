@@ -1,4 +1,4 @@
-//Laura Nolan CSCE247
+// Laura Nolan CSCE247
 package decorator;
 
 import java.util.ArrayList;
@@ -9,12 +9,10 @@ import java.util.ArrayList;
 public abstract class VehicleDecorator implements Vehicle {
     protected Vehicle decoratedVehicle;
 
-    
     /**
      * Constructor for the VehicleDecorator class.
      * @param vehicle The vehicle to be decorated.
      */
-
     public VehicleDecorator(Vehicle vehicle) {
         this.decoratedVehicle = vehicle;
     }

@@ -1,18 +1,17 @@
-//Laura Nolan CSCE247
 package decorator;
 
 import java.util.ArrayList;
+
 /**
  * Decorator for adding Rims to a vehicle.
  */
 public class Rims extends VehicleDecorator {
     private ArrayList<String> rimsLines;
 
-     /**
+    /**
      * Constructor for the Rims class.
      * @param vehicle The vehicle that has rims added to it
      */
-
     public Rims(Vehicle vehicle) {
         super(vehicle);
         this.rimsLines = FileReader.getLines("decorator/TXT/rims.txt");
@@ -40,9 +39,8 @@ public class Rims extends VehicleDecorator {
         int maxLength = Math.max(line1.length(), line2.length());
         StringBuilder combinedLine = new StringBuilder(maxLength);
 
-       
-        int rimsStartLine = 7;  
-        int rimsEndLine = 18;    
+        int rimsStartLine = 7;
+        int rimsEndLine = 18;
 
         for (int i = 0; i < maxLength; i++) {
             char char1 = i < line1.length() ? line1.charAt(i) : ' ';
@@ -56,5 +54,11 @@ public class Rims extends VehicleDecorator {
         }
 
         return combinedLine.toString();
+    }
+
+    @Override
+    public void Vehicle(ArrayList<String> lines) {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'Vehicle'");
     }
 }

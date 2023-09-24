@@ -1,20 +1,18 @@
-//Laura Nolan CSCE247
 package decorator;
 
 import java.util.ArrayList;
 
 /**
- *Decorator for changing the color of the vehicle.
+ * Decorator for changing the color of the vehicle.
  */
 public class Paint extends VehicleDecorator {
     private String colorCode;
 
-     /**
+    /**
      * Constructor for the Paint class.
      * @param vehicle The vehicle to be painted.
      * @param color The desired color for painting.
      */
-
     public Paint(Vehicle vehicle, String color) {
         super(vehicle);
         this.colorCode = getColorCode(color);
@@ -46,5 +44,11 @@ public class Paint extends VehicleDecorator {
             lines.set(i, colorCode + lines.get(i));
         }
         return lines;
+    }
+
+    @Override
+    public void Vehicle(ArrayList<String> lines) {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'Vehicle'");
     }
 }

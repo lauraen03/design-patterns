@@ -1,10 +1,9 @@
-//Laura Nolan CSCE247
 package decorator;
 
 import java.util.ArrayList;
 
 /**
- *Decorator for adding a Smile to a vehicle.
+ * Decorator for adding a Smile to a vehicle.
  */
 public class Smile extends VehicleDecorator {
     private ArrayList<String> smileLines;
@@ -13,7 +12,6 @@ public class Smile extends VehicleDecorator {
      * Constructor for the Smile class.
      * @param vehicle The vehicle that has a smile added to it.
      */
-
     public Smile(Vehicle vehicle) {
         super(vehicle);
         this.smileLines = FileReader.getLines("decorator/TXT/smile.txt");
@@ -41,9 +39,8 @@ public class Smile extends VehicleDecorator {
         int maxLength = Math.max(line1.length(), line2.length());
         StringBuilder combinedLine = new StringBuilder(maxLength);
 
-       
-        int smileOffset = 2; 
-        int rimsOffset = 7;   
+        int smileOffset = 2;
+        int rimsOffset = 7;
 
         for (int i = 0; i < maxLength; i++) {
             char char1 = i < line1.length() ? line1.charAt(i) : ' ';
@@ -68,5 +65,11 @@ public class Smile extends VehicleDecorator {
             result.append(line).append("\n");
         }
         return result.toString();
+    }
+
+    @Override
+    public void Vehicle(ArrayList<String> lines) {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'Vehicle'");
     }
 }
