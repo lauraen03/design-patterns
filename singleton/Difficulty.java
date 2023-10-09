@@ -1,7 +1,7 @@
 package singleton;
-/**
- * The Difficulty enum represents the difficulty levels for anagrams.
- */
+    /**
+    * The Difficulty enum represents the different levels of difficulty in the anagram game
+    */
 public enum Difficulty {
    /**
      * Easy difficulty level.
@@ -19,7 +19,7 @@ public enum Difficulty {
      * The file name associated with the difficulty level.
      */
     public final String fileName;
- /**
+    /**
      * Constructor to associate a file name with a difficulty level.
      *
      * @param fileName The file name as a String.

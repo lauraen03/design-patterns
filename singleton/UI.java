@@ -1,16 +1,22 @@
 package singleton;
 
 import java.util.Scanner;
-
+    /**
+    * The UI class handles the user interface and game interaction.
+    */
 public class UI {
     private Scanner reader;
     private static final String YES = "y";
     private static final String NO = "n";
-
+    /**
+     * Constructor to initialize the UI and create a Scanner for input.
+     */
     public UI() {
         reader = new Scanner(System.in);
     }
-
+    /**
+     * Start the Anagram Game.
+     */
     public void run() {
         Game game = Game.getInstance();
         clear();
@@ -36,7 +42,11 @@ public class UI {
         System.out.println("Your final score is " + game.getScore());
         System.out.println("Have a nice day");
     }
-
+    /**
+     * Ask the user if they want to play the game again.
+     *
+     * @return True if the user wants to play again, false otherwise.
+     */
     public boolean playAgain() {
         while (true) {
             System.out.println("Would you like to continue (Y)es or (N)o: ");
@@ -52,12 +62,18 @@ public class UI {
             }
         }
     }
-
+    /**
+     * Clear the console screen.
+     */
     public void clear() {
         System.out.print("\033[H\033[2J");
         System.out.flush();
     }
-
+    /**
+     * The main method to start the Anagram Game.
+     *
+     * @param args Command-line arguments (not used).
+     */
     public static void main(String[] args) {
         UI ui = new UI();
         ui.run();
